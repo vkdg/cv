@@ -1,5 +1,6 @@
 const path = require('path')
 const fs = require('fs')
+const Webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -24,7 +25,7 @@ module.exports = {
     paths: PATHS
   },
   entry: {
-    main: PATHS.src,
+    main: `${PATHS.src}/index.js`,
     // module: `${PATHS.src}/your-module.js`,
   },
   output: {
@@ -104,8 +105,12 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img` },
       { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
-      { from: `${PATHS.src}/static`, to: '' },
+      // { from: `${PATHS.src}/static`, to: '' },
     ]),
+    new Webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    }),
 
     // Automatic creation any html pages (Don't forget to RERUN dev server)
     // see more: https://github.com/vedees/webpack-template/blob/master/README.md#create-another-html-files

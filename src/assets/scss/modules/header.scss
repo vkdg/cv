@@ -1,1 +1,73 @@
-// header style
+.header {
+	height: 90px;
+	width: 100%;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	background-color: #fff;
+	align-items: center;
+	box-sizing: border-box;
+	z-index: $z-header;
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__left {
+		width: 170px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		&__logo {
+			display: block;
+			text-decoration: none;
+			font-weight: 300;
+			font-size: 20px;
+			font-style: normal;
+			line-height: 28px;
+			width: 170px;
+			color: #000000;
+			transition: all 150ms;
+			&:hover {
+				cursor: pointer;
+				opacity: .6;
+			}
+		}
+	}
+	&__navigation {
+		width: calc(100% - 170px);
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		&__link {
+			text-decoration: none;
+			font-weight: 300;
+			font-size: 18px;
+			font-style: normal;
+			line-height: 28px;
+			color: #000000;
+			transition: 100ms;
+			cursor: pointer;
+			margin-left: 30px;
+			&:hover {
+				cursor: pointer;
+				opacity: .6;
+			}
+			&-github {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				.icon {
+					@include size(30px);
+					background-image: url('/dist/assets/img/github-icon.svg');
+					background-repeat: no-repeat;
+					background-position: center center;
+					background-size: 25px;
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}

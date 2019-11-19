@@ -1,7 +1,7 @@
 {
-  "name": "webpack-simple",
-  "version": "0.0.2",
-  "description": "Simple Webpack Build Template",
+  "name": "CV",
+  "version": "0.0.1",
+  "description": "My portfolio / CV",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vkdg/webpack-simple.git"
+    "url": "git+https://github.com/vkdg/cv.git"
   },
   "keywords": [
     "javascript",

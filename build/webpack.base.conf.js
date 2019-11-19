@@ -24,7 +24,7 @@ module.exports = {
     paths: PATHS
   },
   entry: {
-    app: PATHS.src,
+    main: PATHS.src,
     // module: `${PATHS.src}/your-module.js`,
   },
   output: {

@@ -1,3 +1,5 @@
+// Test
+
 const path = require('path');
 const fs = require('fs');
 const Webpack = require('webpack');

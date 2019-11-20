@@ -9,7 +9,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 // see more: https://github.com/vedees/webpack-template/blob/master/README.md#main-const
 const PATHS = {
   src: path.join(__dirname, '../src'),
-  dist: path.join(__dirname, '../dist'),
+  dist: path.join(__dirname, '../cv'),
   home: path.join(__dirname, '../'),
   assets: 'assets/'
 }
@@ -66,7 +66,10 @@ module.exports = {
       test: /\.scss$/,
       use: [
         'style-loader',
-        MiniCssExtractPlugin.loader,
+        {
+          loader: MiniCssExtractPlugin.loader,
+          options: { publicPath: PATHS.dist }
+        },
         {
           loader: 'css-loader',
           options: { sourceMap: true }

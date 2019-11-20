@@ -51,23 +51,22 @@
 			transition: 100ms;
 			cursor: pointer;
 			margin-left: 30px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
 			&:hover {
 				cursor: pointer;
 				opacity: .6;
 			}
-			&-github {
-				display: flex;
-				align-items: center;
-				justify-content: flex-start;
-				.icon {
-					@include size(30px);
-					background-repeat: no-repeat;
-					background-position: center center;
-					background-size: 25px;
-					margin-right: 5px;
-					background-image: url('../img/github-icon.svg');
-				}
+			.icon {
+				@include size(30px);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 25px;
+				margin-right: 5px;
 			}
+			&-github .icon { background-image: url('../img/github-icon.svg'); }
+			&-telegram .icon { background-image: url('../img/telegram-icon.svg'); }
 		}
 	}
 }

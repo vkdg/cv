@@ -1,2 +1,44 @@
 // Fonts here
 // see more: https://github.com/vedees/webpack-template/blob/master/README.md#import-js-files
+
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('../fonts/750da7b1ebb0da6c54f3ec48adad4a44.woff2') format('woff2'),
+        url('../fonts/750da7b1ebb0da6c54f3ec48adad4a44.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('../fonts/5b5048d769c7a38dc9f0cc501087a549.woff2') format('woff2'),
+        url('../fonts/5b5048d769c7a38dc9f0cc501087a549.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('../fonts/5e7b5b233b680964c95530307d1c7ac5.woff2') format('woff2'),
+        url('../fonts/5e7b5b233b680964c95530307d1c7ac5.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('../fonts/1141886537cf68bc36ebde4de8e1293a.woff2') format('woff2'),
+        url('../fonts/1141886537cf68bc36ebde4de8e1293a.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('../fonts/eb97e73dedaa9410e542181fcd65a1d3.woff2') format('woff2'),
+        url('../fonts/eb97e73dedaa9410e542181fcd65a1d3.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+

@@ -23,8 +23,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	// font-family: $mainFont;
-	font-family: 'Museo Sans';
+	font-family: $mainFont;
 	font-size: $mainFontSize;
 	font-weight: $mainFontWeight;
 	-webkit-font-smoothing: antialiased;
@@ -48,20 +47,33 @@ ul, li {
 	list-style-type: none;
 }
 
+// .container {
+// 	width: 100%;
+// 	flex: 0 0 auto;
+// 	position: relative;
+// 	margin: 0 auto;
+// 	max-width: $desktopWidth;
+// 	@media screen and (max-width: $smDesktopWidth) {
+// 		max-width: tableWidth;
+// 		margin: 0 15px;
+// 	}
+// 	@media screen and (max-width: $tableWidth) {
+// 		max-width: phoneWidth;
+
+// 	}
+// 	@media screen and (max-width: $phoneWidth) {
+// 		max-width: smPhoneWidth;
+// 	}
+// }
+
 .container {
-	width: 100%;
-	flex: 0 0 auto;
+	width: 1200px;
 	position: relative;
 	margin: 0 auto;
-	max-width: $desktopWidth;
-	@media screen and (max-width: $smDesktopWidth) {
-		max-width: tableWidth;
-	}
-	@media screen and (max-width: $tableWidth) {
-		max-width: phoneWidth;
-	}
-	@media screen and (max-width: $phoneWidth) {
-		max-width: smPhoneWidth;
+	box-sizing: border-box;
+	@media screen and (max-width: 1024px) {
+		width: calc(100% - 30px);
+		margin: 0 15px;
 	}
 }
 

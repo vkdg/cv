@@ -22,24 +22,23 @@ export class Interface {
 			return false;
 		});
 	}
-	gcd(a, b) {
-		return (b == 0) ? a : this.gcd(b, a%b);
-	}
-	test() {
-		let w = screen.width,
-			h = screen.height,
-			r = this.gcd(w, h),
-			a = w / r + ":" + h / r;
+	// gcd(a, b) {
+	// 	return (b == 0) ? a : this.gcd(b, a%b);
+	// }
+	// test() {
+	// 	let w = screen.width,
+	// 		h = screen.height,
+	// 		r = this.gcd(w, h),
+	// 		a = w / r + ":" + h / r;
 
-		console.log('Screen Width:', w);
-		console.log('Screen Height:', h);
-		console.log('Screen GCD:', r);
-		console.log('Screen Aspect Ratio:', a);
-	}
+	// 	console.log('Screen Width:', w);
+	// 	console.log('Screen Height:', h);
+	// 	console.log('Screen GCD:', r);
+	// 	console.log('Screen Aspect Ratio:', a);
+	// }
 	init() {
-		this.test();
+		// this.test();
 		this.corners();
 		this.gridInit();
-		console.log('Hello Unicorns!');
 	}
 }

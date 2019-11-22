@@ -71,7 +71,7 @@ ul, li {
 	position: relative;
 	margin: 0 auto;
 	box-sizing: border-box;
-	@media screen and (max-width: 1024px) {
+	@media screen and (max-width: 1250px) {
 		width: calc(100% - 30px);
 		margin: 0 15px;
 	}
@@ -80,4 +80,5 @@ ul, li {
 // Modules
 // @import "modules/my-module.scss";
 @import "modules/header.scss";
+@import "modules/about.scss";
 @import "modules/timeline.scss";

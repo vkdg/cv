@@ -1,4 +1,70 @@
+.timeline-selector-top {
+	display: none;
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		position: relative;
+		flex-wrap: wrap;
+		&:after {
+			position: absolute;
+			content: '';
+			bottom: -20px;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			background-color: $mainFontColor;
+			z-index: -1;
+		}
+	}
+	&__years {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+		width: 100%;
+		&__element {
+			text-align: center;
+			display: block;
+			position: relative;
+			transition: 150ms;
+			a {
+				color: lighten($mainFontColor, 5);
+				font-size: 18px;
+				line-height: 20px;
+				font-weight: 300;
+				transition: 150ms;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: -29px;
+				left: calc(50% - 10px);
+				width: 20px;
+				height: 20px;
+				border-radius: 10em;
+				background-color: $theme-color;
+				transition: 150ms;
+			}
+			&:first-child:after { left: auto; right: 0; }
+			&:last-child:after { left: 0; right: auto; }
+			&:hover {
+				a {
+					color: $mainFontColor;
+					font-size: 20px;
+					font-weight: bold;
+				}
+				&:after {
+					background-color: darken($theme-color, 10);
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 1400px) { display: flex; }
+}
 .timeline-selector {
+	@media screen and (max-width: 1400px) { display: none; }
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -70,7 +136,7 @@
 }
 
 .timeline {
-	padding-top: 50px;
+	padding-top: 20px;
 	&__year {
 		&__title {
 			font-style: normal;

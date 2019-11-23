@@ -53,6 +53,26 @@ export class Interface {
 		const headerLogoElement = document.getElementsByClassName('header__left__logo__img')[0];
 		return document.getElementsByClassName('header__left__logo__img')[0].style.backgroundImage = 'url('+logoUrl+')';
 	}
+	test_countdown(date, timezone) {
+		let now = new Date().toLocaleString("ru-RU", {timeZone: "Asia/Yekaterinburg"}).split(','),
+			// finish = new Date(2019, 11, 31, 23, 59, 59).toLocaleString("ru-RU", {timeZone: "Asia/Yekaterinburg"}),
+			finish = new Date(...date).toLocaleString("ru-RU", {timeZone: timezone}).split(','),
+			thisDate = now[0].split('.'),
+			thisTime = now[1].trim().split(':'),
+			finishDate = finish[0].split('.'),
+			finishTime = finish[1].trim().split(':');
+
+		now = new Date(+thisDate[2], +thisDate[1]-1, +thisDate[0], +thisTime[0], +thisTime[1], +thisTime[2]);
+		finish = new Date(+finishDate[2], +finishDate[1]-1, +finishDate[0], +finishTime[0], +finishTime[1], +finishTime[2]);
+		let delta = {
+			all: finish - now,
+		}
+
+		
+		console.log("Now:", now);
+		console.log("Finish:", finish);
+		console.log("Delta:", delta);
+	}	
 	init() {
 		this.corners();
 		this.gridInit();

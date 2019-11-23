@@ -16,7 +16,7 @@
 		justify-content: center;
 	}
 	&__left {
-		width: 235px;
+		width: 285px;
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
@@ -36,10 +36,10 @@
 				opacity: .6;
 			}
 			&__img {
-				width: 50px;
-				height: 50px;
+				width: 70px;
+				height: 65px;
 				// background-image: $images_mainLogo;
-				background-image: $images_mesh2Logo;
+				background-image: $images_mesh2LogoV2;
 				background-repeat: no-repeat;
 				background-position: center; 
 				background-size: 100%;
@@ -50,7 +50,7 @@
 		}
 	}
 	&__navigation {
-		width: calc(100% - 235px);
+		width: calc(100% - 285px);
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;

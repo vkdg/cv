@@ -22,23 +22,40 @@ export class Interface {
 			return false;
 		});
 	}
-	// gcd(a, b) {
-	// 	return (b == 0) ? a : this.gcd(b, a%b);
-	// }
-	// test() {
-	// 	let w = screen.width,
-	// 		h = screen.height,
-	// 		r = this.gcd(w, h),
-	// 		a = w / r + ":" + h / r;
-
-	// 	console.log('Screen Width:', w);
-	// 	console.log('Screen Height:', h);
-	// 	console.log('Screen GCD:', r);
-	// 	console.log('Screen Aspect Ratio:', a);
-	// }
+	getSeasonLogo(date) {
+		const month = date.getMonth() + 1;
+		switch(month) {
+			case 1:
+			case 2:
+			case 3: 
+				return 'cv/assets/img/logo-v2-black.svg';
+			break;
+			case 4:
+			case 5:
+			case 6: 
+				return 'cv/assets/img/logo-v2-mesh1.svg';
+			break;
+			case 7:
+			case 8:
+			case 9: 
+				return 'cv/assets/img/logo-v2-black.svg';
+			break;
+			case 10:
+			case 11:
+			case 12:
+				return 'cv/assets/img/logo-v2-mesh2.svg';
+			break;
+			default: return "cv/assets/img/logo-v2-black.svg";
+		}
+	}
+	setSeasonLogo() {
+		const logoUrl = this.getSeasonLogo(new Date());
+		const headerLogoElement = document.getElementsByClassName('header__left__logo__img')[0];
+		return document.getElementsByClassName('header__left__logo__img')[0].style.backgroundImage = 'url('+logoUrl+')';
+	}
 	init() {
-		// this.test();
 		this.corners();
 		this.gridInit();
+		this.setSeasonLogo();
 	}
 }

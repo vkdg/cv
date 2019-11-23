@@ -10,6 +10,8 @@ $(document).ready(function(){
 	window.$ = jQuery;
 	window.ui = ui;
 	ui.init();
-	// const countdownTick = setInterval(() => ui.test_countdown(), 1000);
-	const countdownTick = setInterval(() => ui.test_countdown([2019, 11, 31, 23, 59, 59], "Asia/Yekaterinburg"), 1000);
+
+	// Timer
+	ui.test_countdown([2019, 11, 31, 23, 59, 59], "Asia/Yekaterinburg");
+	const countdownTick = setInterval(() => ui.test_countdown([2019, 11, 31, 23, 59, 59], "Asia/Yekaterinburg"), 60000);
 });

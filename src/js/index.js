@@ -3,7 +3,8 @@
 
 require('jquery');
 import { Interface } from './interface.js';
-import { Timer } from './timer.js';
+import { Timer } from './utils/timer.js';
+import { Animate } from './utils/animate.js';
 
 const ui = new Interface();
 

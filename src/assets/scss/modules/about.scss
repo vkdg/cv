@@ -1,5 +1,5 @@
 .about {
-	padding: 100px 0 50px;
+	padding: 100px 0 20px;
 	.container {
 		display: flex;
 		align-items: center;
@@ -19,15 +19,18 @@
 		font-weight: 300;
 		width: 100%;
 		color: $mainFontColor;
+		margin-bottom: 25px;
 		strong { 
 			font-weight: bold;
-			color: #000;
+			color: $mainFontColor;
 		}
 	}
-	&__wrapper {
-		width: 100%;
-	}
-	&__skills-block {
-
+	&__text {
+		margin-bottom: 30px;
+		p {
+			line-height: 130%;
+			font-weight: 400;
+			font-size: 18px;
+		}
 	}
 }

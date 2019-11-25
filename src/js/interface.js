@@ -15,6 +15,10 @@ export class Interface {
 			$('.timeline__year__content').css('grid-template-rows', 'repeat(5, '+gridBlockHeight+'px)');
 		}
 	}
+	setYearInFooter() {
+		const year = new Date().getFullYear();
+		document.getElementById('footer__year').append(year);
+	}
 	corners() {
 		$('a[href^="#"]').bind('click', function(){
 			var el = $(this).attr('href');
@@ -27,17 +31,17 @@ export class Interface {
 		switch(month) {
 			case 1:
 			case 2:
-			case 3: 
+			case 3:
 				return 'cv/assets/img/logo-v2-black.svg';
 			break;
 			case 4:
 			case 5:
-			case 6: 
+			case 6:
 				return 'cv/assets/img/logo-v2-mesh1.svg';
 			break;
 			case 7:
 			case 8:
-			case 9: 
+			case 9:
 				return 'cv/assets/img/logo-v2-black.svg';
 			break;
 			case 10:
@@ -54,8 +58,9 @@ export class Interface {
 		return document.getElementsByClassName('header__left__logo__img')[0].style.backgroundImage = 'url('+logoUrl+')';
 	}
 	init() {
-		this.corners();
-		this.gridInit();
-		this.setSeasonLogo();
+		this.corners();					// Link animation
+		this.gridInit();				// Mainpage grids
+		this.setSeasonLogo();			// Set season logo for header
+		this.setYearInFooter(); 		// Set current value for footer copyright
 	}
 }

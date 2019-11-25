@@ -7,10 +7,12 @@ import { Timer } from './utils/timer.js';
 import { Animate } from './utils/animate.js';
 
 const ui = new Interface();
+const animate = new Animate();
 
 $(document).ready(function(){
 	window.$ = jQuery;
 	window.ui = ui;
+	window.animate = animate;
 	ui.init();
 
 	/* Timer */	

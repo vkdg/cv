@@ -2,7 +2,7 @@
 @import "utils/vars";
 @import "utils/images";
 @import "utils/mixins";
-@import "utils/fonts"; 
+@import "utils/fonts";
 @import "utils/reset";
 
 html {
@@ -82,3 +82,4 @@ ul, li {
 @import "modules/header.scss";
 @import "modules/about.scss";
 @import "modules/timeline.scss";
+@import "modules/footer.scss";

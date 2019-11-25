@@ -41,7 +41,7 @@
 				// background-image: $images_mainLogo;
 				background-image: $images_mesh2LogoV2;
 				background-repeat: no-repeat;
-				background-position: center; 
+				background-position: center;
 				background-size: 100%;
 			}
 			span {
@@ -59,17 +59,18 @@
 			font-weight: 300;
 			font-size: 18px;
 			font-style: normal;
-			line-height: 28px;
+			line-height: 90px;
 			color: #000000;
 			transition: 100ms;
 			cursor: pointer;
-			margin-left: 30px;
+			padding: 0 10px;
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
+			transition: all 150ms ease-in-out;
 			&:hover {
 				cursor: pointer;
-				opacity: .6;
+				background-color: rgba(0, 0, 0, 0.03);
 			}
 			.icon {
 				@include size(30px);

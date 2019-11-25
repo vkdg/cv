@@ -12,15 +12,22 @@
             font-style: normal;
             line-height: 130%;
             a {
+                // color: $mainFontColor;
+                // text-decoration: none;
+                // font-variant: normal;
+                // transition: 150ms;
+                // &:hover {
+                //     cursor: pointer;
+                //     text-decoration: underline;
+                //     color: $primary-color;
+                // }
                 color: $mainFontColor;
-                text-decoration: none;
-                font-variant: normal;
-                color: darken($primary-color, 50);
-                transition: 150ms;
+                border-bottom: 1px dotted;
+                transition: all 150ms;
                 &:hover {
                     cursor: pointer;
-                    text-decoration: underline;
                     color: $primary-color;
+                    border-color: $primary-color;
                 }
             }
         }

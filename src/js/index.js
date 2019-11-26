@@ -7,7 +7,7 @@ import { Timer } from './utils/timer.js';
 import { Animate } from './utils/animate.js';
 
 const ui = new Interface();
-const animate = new Animate();
+const animate = new Animate('animated');
 
 $(document).ready(function(){
 	window.$ = jQuery;

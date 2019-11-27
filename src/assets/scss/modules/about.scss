@@ -36,6 +36,14 @@
 	}
 	.skills {
 		width: 100%;
+		&__description {
+			width: 100%;
+			text-align: left;
+			margin-bottom: 10px;
+			font-weight: bold;
+			border-bottom: 1px solid #f0f0f0;
+			padding-bottom: 10px;
+		}
 		ul {
 			width: 100%;
 			display: flex;
@@ -82,6 +90,8 @@
 		&__sass { .icon { background-image: $images_sass; background-size: 40px; }  }
 		&__webpack { .icon { background-image: $images_webpack; background-size: 40px; }  }
 		&__gulp { .icon { background-image: $images_gulp; background-size: 25px; }  }
+		&__figma { .icon { background-image: $images_figma; background-size: 25px; }  }
+		&__jquery { .icon { background-image: $images_jquery; background-size: 40px; }  }
 	}
 }
 

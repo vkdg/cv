@@ -79,6 +79,9 @@
 		&__sketch { .icon { background-image: $images_sketch; background-size: 50px; } }
 		&__photoshop { .icon { background-image: $images_photoshop; background-size: 40px; } }
 		&__sublime { .icon { background-image: $images_sublimeText; background-size: 40px; } }
+		&__sass { .icon { background-image: $images_sass; background-size: 40px; }  }
+		&__webpack { .icon { background-image: $images_webpack; background-size: 40px; }  }
+		&__gulp { .icon { background-image: $images_gulp; background-size: 25px; }  }
 	}
 }
 

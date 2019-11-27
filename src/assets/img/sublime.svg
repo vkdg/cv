@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="448px" height="448px" viewBox="0 0 448 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>sublime</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="27.4837938%" y1="49.5162598%" x2="99.9498703%" y2="36.9965964%" id="linearGradient-1">
+            <stop stop-color="#252525" offset="0%"></stop>
+            <stop stop-color="#616161" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sublime" fill-rule="nonzero">
+            <path d="M430.1,447.3 L17.9,447.3 C8.4,447.3 0.6,439.5 0.6,430 L0.6,17.9 C0.6,8.4 8.4,0.6 17.9,0.6 L430.1,0.6 C439.6,0.6 447.4,8.4 447.4,17.9 L447.4,430.1 C447.3,439.6 439.6,447.3 430.1,447.3 L430.1,447.3 Z" id="Path" fill="#808080"></path>
+            <path d="M103.6,135.5 L337.4,61.3 C337.4,61.3 354,52.6 350,68.7 L350.6,140.2 C350.6,140.2 353.5,150.7 339.1,153.3 L244.1,183 L103.6,135.5 Z" id="Path" fill="#2F2F2F"></path>
+            <path d="M103.6,135.5 C103.6,135.5 94.4,137.7 97.1,153.4 L96.6,222.3 C96.6,222.3 95.8,231 112.3,234.5 L344,309.1 C344,309.1 351.8,312.2 350.9,302.6 L351,225.8 C351,225.8 353.2,217.9 338.8,212.7 L244.1,183 L103.6,135.5 Z" id="Path" fill="#262626"></path>
+            <path d="M205.7,264.5 L107.1,294.6 C107.1,294.6 95.2,295 96.6,317.3 C98,339.6 96.5,384.5 96.5,384.5 C96.5,384.5 97.5,392.8 108.9,388 L342.7,313.4 C342.7,313.4 351,311.3 344,309 C337,306.8 205.7,264.5 205.7,264.5 L205.7,264.5 Z" id="Path" fill="url(#linearGradient-1)"></path>
+        </g>
+    </g>
+</svg>

@@ -88,10 +88,12 @@
 		&__photoshop { .icon { background-image: $images_photoshop; background-size: 40px; } }
 		&__sublime { .icon { background-image: $images_sublimeText; background-size: 40px; } }
 		&__sass { .icon { background-image: $images_sass; background-size: 40px; }  }
+		&__less { .icon { background-image: $images_less; background-size: 55px; }  }
 		&__webpack { .icon { background-image: $images_webpack; background-size: 40px; }  }
 		&__gulp { .icon { background-image: $images_gulp; background-size: 25px; }  }
 		&__figma { .icon { background-image: $images_figma; background-size: 25px; }  }
 		&__jquery { .icon { background-image: $images_jquery; background-size: 40px; }  }
+		&__webstorm { .icon { background-image: $images_webstorm; background-size: 40px; }  }
 	}
 }
 

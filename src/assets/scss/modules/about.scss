@@ -1,5 +1,5 @@
 .about {
-	background-color: #fafafa;
+	// background-color: #fafafa;
 	padding: 100px 0 20px;
 	.container {
 		display: flex;
@@ -16,7 +16,7 @@
 	}
 	&__title {
 		text-align: center;
-		font-size: 28px;
+		font-size: 34px;
 		font-weight: 300;
 		width: 100%;
 		color: $mainFontColor;
@@ -34,6 +34,17 @@
 			font-size: 18px;
 		}
 	}
+}
+
+.skills-section {
+	background-color: #fafafa;
+	padding: 50px 0 30px;
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 	.skills {
 		width: 100%;
 		&__description {
@@ -43,6 +54,14 @@
 			font-weight: bold;
 			border-bottom: 1px solid #f0f0f0;
 			padding-bottom: 10px;
+		}
+		&__title {
+			margin-bottom: 50px;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 26px;
+			line-height: 130%;
+			
 		}
 		ul {
 			width: 100%;

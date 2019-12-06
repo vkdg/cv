@@ -1,4 +1,10 @@
 export class Timer {
+	/**
+	* @param finishDate [array]	- Финишная дата для таймера, формат для new Date();
+	* @param timezone [boolean, string] - Имя часового пояса, или false, если нет необходимости
+	* @param timerDescription [boolean, string] - Описание для таймера, или false, если нет необходимости
+	* @param refreshInterval [int] - Время в секундах 
+	**/
 	constructor(finishDate, timezone = false, timerDescription = false, refreshInterval = 60) {
 		this.finishDate = finishDate;
 		this.timezone = timezone;

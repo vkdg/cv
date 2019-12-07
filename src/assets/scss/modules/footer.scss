@@ -7,22 +7,6 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        p {
-            font-size: 16px;
-            font-weight: normal;
-            font-style: normal;
-            line-height: 130%;
-            a {
-                color: $mainFontColor;
-                border-bottom: 1px dotted;
-                transition: all 150ms;
-                &:hover {
-                    cursor: pointer;
-                    color: $primary-color;
-                    border-color: $primary-color;
-                }
-            }
-        }
     }
     &__logo {
         width: 100%;
@@ -32,7 +16,6 @@
         &__link {
             width: 70px;
             height: 60px;
-            // background-image: $images_mesh2LogoV2;
             background-image: $images_mainLogoV2;
             background-repeat: no-repeat;
             background-position: center;
@@ -45,6 +28,22 @@
                 cursor: pointer;
                 opacity: .6;
             }        
+        }
+    }
+    &__text {
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 130%;
+        a {
+            color: $mainFontColor;
+            border-bottom: 1px dotted;
+            transition: all 150ms;
+            &:hover {
+                cursor: pointer;
+                color: $primary-color;
+                border-color: $primary-color;
+            }
         }
     }
 }

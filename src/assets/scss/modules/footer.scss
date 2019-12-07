@@ -6,21 +6,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         p {
             font-size: 16px;
             font-weight: normal;
             font-style: normal;
             line-height: 130%;
             a {
-                // color: $mainFontColor;
-                // text-decoration: none;
-                // font-variant: normal;
-                // transition: 150ms;
-                // &:hover {
-                //     cursor: pointer;
-                //     text-decoration: underline;
-                //     color: $primary-color;
-                // }
                 color: $mainFontColor;
                 border-bottom: 1px dotted;
                 transition: all 150ms;
@@ -30,6 +22,29 @@
                     border-color: $primary-color;
                 }
             }
+        }
+    }
+    &__logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__link {
+            width: 70px;
+            height: 60px;
+            // background-image: $images_mesh2LogoV2;
+            background-image: $images_mainLogoV2;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            transition: all 150ms;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            &:hover {
+                cursor: pointer;
+                opacity: .6;
+            }        
         }
     }
 }

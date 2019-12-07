@@ -1,4 +1,13 @@
 .timeline {
+	&__title {
+		margin-bottom: 50px;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 26px;
+		line-height: 130%;
+		padding: 50px 0 10px;
+		text-align: center;
+	}
 	&__year {
 		&-2019 {}
 		&-2018,

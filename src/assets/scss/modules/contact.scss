@@ -1,0 +1,16 @@
+.contact {
+	background-color: #fafafa;
+	padding: 70px 0;
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__item {
+		margin: 15px;
+		width: 100px;
+		height: 100px;
+		border-radius: 10em;
+		background-color: #ccc;
+	}
+}

@@ -1,5 +1,5 @@
 .footer {
-    margin-top: 70px;
+    // margin-top: 70px;
     padding: 35px 0;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
     .container {
@@ -13,6 +13,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 15px;
         &__link {
             width: 70px;
             height: 60px;

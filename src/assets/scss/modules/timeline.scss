@@ -39,8 +39,8 @@
 		&__item {
 			background-color: #f0f0f0;
 			background-repeat: no-repeat;
-			background-position: center center;
-			background-size: cover;
+			background-position: top center;
+			background-size: 100%;
 			transition: background-color 150ms ease-in-out;
 			position: relative;
 			&:after {

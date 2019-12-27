@@ -1,20 +1,20 @@
 export class Interface {
 	constructor() {}
-	gridHeightCalculator(elementsCount) {
-		let containerWidth = document.getElementsByClassName('container')[1].offsetWidth;
-		return (containerWidth / elementsCount).toFixed(0);
-	}
-	gridInit() {
-		let containerWidth = document.getElementsByClassName('container')[1].offsetWidth;
+	// gridHeightCalculator(elementsCount) {
+	// 	let containerWidth = document.getElementsByClassName('container')[1].offsetWidth;
+	// 	return (containerWidth / elementsCount).toFixed(0);
+	// }
+	// gridInit() {
+	// 	let containerWidth = document.getElementsByClassName('container')[1].offsetWidth;
 
-		if(containerWidth > 425) {
-			let gridBlockHeight = this.gridHeightCalculator(6);
-			$('.timeline__year__content').css('grid-template-rows', 'repeat(6, '+gridBlockHeight+'px)');
-		} else {
-			let gridBlockHeight = this.gridHeightCalculator(1);
-			$('.timeline__year__content').css('grid-template-rows', 'repeat(5, '+gridBlockHeight+'px)');
-		}
-	}
+	// 	if(containerWidth > 425) {
+	// 		let gridBlockHeight = this.gridHeightCalculator(6);
+	// 		$('.timeline__year__content').css('grid-template-rows', 'repeat(6, '+gridBlockHeight+'px)');
+	// 	} else {
+	// 		let gridBlockHeight = this.gridHeightCalculator(1);
+	// 		$('.timeline__year__content').css('grid-template-rows', 'repeat(5, '+gridBlockHeight+'px)');
+	// 	}
+	// }
 	setYearInFooter() {
 		const year = new Date().getFullYear();
 		document.getElementById('footer__year').append(year);
@@ -59,7 +59,7 @@ export class Interface {
 	}
 	init() {
 		this.corners();					// Link animation
-		this.gridInit();				// Mainpage grids
+		// this.gridInit();				// Mainpage grids
 		this.setSeasonLogo();			// Set season logo for header
 		this.setYearInFooter(); 		// Set current value for footer copyright
 	}

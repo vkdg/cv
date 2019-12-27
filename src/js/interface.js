@@ -14,7 +14,7 @@ export class Interface {
 	// 		let gridBlockHeight = this.gridHeightCalculator(1);
 	// 		$('.timeline__year__content').css('grid-template-rows', 'repeat(5, '+gridBlockHeight+'px)');
 	// 	}
-	// }
+	// } //
 	setYearInFooter() {
 		const year = new Date().getFullYear();
 		document.getElementById('footer__year').append(year);

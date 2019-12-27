@@ -5,6 +5,7 @@
 @import "utils/fonts";
 @import "utils/reset";
 @import "utils/animation";
+@import "utils/tech_icons";
 
 html {
 	line-height: $mainLineHeight;
@@ -63,5 +64,6 @@ ul, li {
 // Modules
 @import "modules/header";
 @import "modules/about";
+@import "modules/projects";
 @import "modules/contact";
 @import "modules/footer";

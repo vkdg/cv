@@ -1,0 +1,18 @@
+.tech__icon {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	&-html { background-image: $images_html5; }
+	&-js { background-image: $images_nodejs; }
+	&-php { background-image: $images_php; }
+	&-sketch { background-image: $images_sketch; }
+	&-photoshop { background-image: $images_photoshop; }
+	&-sublime { background-image: $images_sublimeText; }
+	&-sass { background-image: $images_sass; }
+	&-less { background-image: $images_less; }
+	&-webpack { background-image: $images_webpack; }
+	&-gulp { background-image: $images_gulp; }
+	&-figma { background-image: $images_figma; }
+	&-jquery { background-image: $images_jquery; }
+	&-webstorm { background-image: $images_webstorm; }
+}

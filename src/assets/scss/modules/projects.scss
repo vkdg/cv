@@ -1,0 +1,97 @@
+.projects {
+	padding: 50px 0;
+	.container {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__element {
+		width: calc(50% - 10px);
+		box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.08);
+		position: relative;
+		border-radius: 7px;
+		overflow: hidden;
+		margin-bottom: 20px;
+		transition: all 200ms ease-in-out;
+		&__image {
+			width: 100%;
+			height: 400px;
+			background-position: top center;
+			background-size: 100%;
+			transition: all 200ms ease-in-out;
+		}
+		&__title {
+			position: absolute;
+			top: 100px;
+			left: 0;
+			width: 100%;
+			min-height: 300px;
+			background: rgb(255, 255, 255);
+			background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%);
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			flex-wrap: wrap;
+			&__wrapper { padding-bottom: 35px; }
+			&__text {
+				font-style: normal;
+				font-weight: bold;
+				font-size: 26px;
+				text-align: center;
+				color: #424242;
+				width: 100%;
+				margin-bottom: 5px;
+			}
+			&__description {
+				font-style: italic;
+				font-weight: normal;
+				font-size: 15px;
+				color: #666;
+				padding: 0 15px;
+				text-align: center;
+
+			}
+		}
+		&__summary {
+			padding: 15px;
+			&__parameter {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				&__title {
+					font-size: 16px;
+					color: #888;
+					width: 110px;
+					border-right: 1px solid #f0f0f0;
+					padding: 7px 0;
+				}
+				&__value {
+					font-size: 14px;
+					padding-left: 15px;
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					.tech__icon {
+						width: 25px;
+						height: 25px;
+						margin-right: 10px;
+					}
+					a {
+						color: #424242;
+						&:hover {
+							color: #222;
+						}
+					}
+				}
+			}
+		}
+		&:hover {
+			cursor: pointer;
+			box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.26);
+			.projects__element__image {
+				opacity: 0.7;
+			}
+		}
+	}	
+}

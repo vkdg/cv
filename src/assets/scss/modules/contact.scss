@@ -11,6 +11,24 @@
 		width: 100px;
 		height: 100px;
 		border-radius: 10em;
-		background-color: #ccc;
+		background-color: #eee;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 50px;
+		opacity: 0.5;
+		transition: all 150ms ease-in-out;
+		&-telegram {
+			background-image: $images-contacts-telegram;	
+		}
+		&-fbmess {
+			background-image: $images-contacts-facebook;
+		}
+		&-email {
+			background-image: $images-contacts-email;
+		}
+		&:hover {
+			cursor: pointer;
+			opacity: 1;
+		}
 	}
 }

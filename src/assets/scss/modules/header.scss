@@ -79,8 +79,8 @@
 				background-size: 25px;
 				margin-right: 5px;
 			}
-			&-github .icon { background-image: $images_githubLogo; }
-			&-telegram .icon { background-image: $images_tLogo; }
+			&-github .icon { background-image: $images-github; }
+			&-telegram .icon { background-image: $images-contacts-telegram; }
 		}
 	}
 

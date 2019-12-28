@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>telegram</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12.5,0 C5.59475806,0 0,5.59475806 0,12.5 C0,19.4052419 5.59475806,25 12.5,25 C19.4052419,25 25,19.4052419 25,12.5 C25,5.59475806 19.4052419,0 12.5,0 Z M18.6391129,8.56350806 L16.5877016,18.2308468 C16.4364919,18.9163306 16.0282258,19.0826613 15.4586694,18.7600806 L12.3336694,16.4566532 L10.8266129,17.9082661 C10.6602823,18.0745968 10.5191532,18.2157258 10.1965726,18.2157258 L10.4183468,15.0352823 L16.2096774,9.80342742 C16.4616935,9.58165323 16.1542339,9.45564516 15.8215726,9.67741935 L8.66431452,14.1834677 L5.5796371,13.2207661 C4.90927419,13.0090726 4.89415323,12.5504032 5.72076613,12.2278226 L17.7721774,7.58064516 C18.3316532,7.37903226 18.8205645,7.71673387 18.6391129,8.56350806 L18.6391129,8.56350806 Z" id="path-1"></path>
+    </defs>
+    <g id="telegram" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Brands/telegram">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <g id="Color/Black" mask="url(#mask-2)" fill="#242A42" fill-rule="evenodd">
+                <rect id="Black" x="0" y="0" width="25" height="25"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

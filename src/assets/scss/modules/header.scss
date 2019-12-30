@@ -61,7 +61,6 @@
 			font-style: normal;
 			line-height: 90px;
 			color: #000000;
-			transition: 100ms;
 			cursor: pointer;
 			padding: 0 10px;
 			display: flex;
@@ -72,15 +71,6 @@
 				cursor: pointer;
 				background-color: rgba(0, 0, 0, 0.03);
 			}
-			.icon {
-				@include size(30px);
-				background-repeat: no-repeat;
-				background-position: center center;
-				background-size: 25px;
-				margin-right: 5px;
-			}
-			&-github .icon { background-image: $images-github; }
-			&-telegram .icon { background-image: $images-contacts-telegram; }
 		}
 	}
 

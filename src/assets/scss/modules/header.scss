@@ -56,19 +56,16 @@
 		justify-content: flex-end;
 		&__link {
 			text-decoration: none;
-			font-weight: 300;
-			font-size: 18px;
+			font-weight: bold;
 			font-style: normal;
 			line-height: 90px;
-			color: #000000;
-			cursor: pointer;
+			color: #424242;
+			font-size: 12px;
+			text-transform: uppercase;
 			padding: 0 10px;
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-			transition: all 150ms ease-in-out;
 			&:hover {
 				cursor: pointer;
+				color: #000;
 				background-color: rgba(0, 0, 0, 0.03);
 			}
 		}

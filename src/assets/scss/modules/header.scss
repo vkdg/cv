@@ -10,6 +10,7 @@
 	align-items: center;
 	box-sizing: border-box;
 	z-index: $z-header;
+	transition: all 150ms ease-in-out;
 	.container {
 		display: flex;
 		align-items: center;
@@ -67,6 +68,28 @@
 				cursor: pointer;
 				color: #000;
 				background-color: rgba(0, 0, 0, 0.03);
+			}
+		}
+	}
+
+	&-scrolled {
+		height: 50px;
+		.header {
+			&__left {
+				&__logo {
+					font-size: 14px;
+					line-height: 20px;
+					&__img {
+						background-size: contain;
+						height: 40px;
+						width: 50px;
+					}
+				}
+			}
+			&__navigation {
+				&__link {
+					line-height: 50px;
+				}
 			}
 		}
 	}

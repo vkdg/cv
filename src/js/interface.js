@@ -57,10 +57,21 @@ export class Interface {
 		const headerLogoElement = document.getElementsByClassName('header__left__logo__img')[0];
 		return document.getElementsByClassName('header__left__logo__img')[0].style.backgroundImage = 'url('+logoUrl+')';
 	}
+	scrollHeader() {
+		const header = document.querySelector('.header');
+		window.addEventListener('scroll', function(){
+			if(pageYOffset > 90) {
+				if(!header.classList.contains('header-scrolled')) header.classList.add('header-scrolled');
+			} else {
+				if(header.classList.contains('header-scrolled')) header.classList.remove('header-scrolled');
+			}
+		});
+	}
 	init() {
 		this.corners();					// Link animation
 		// this.gridInit();				// Mainpage grids
 		this.setSeasonLogo();			// Set season logo for header
 		this.setYearInFooter(); 		// Set current value for footer copyright
+		this.scrollHeader();
 	}
 }
